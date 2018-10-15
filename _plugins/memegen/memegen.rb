@@ -1,7 +1,6 @@
 require "rmagick"
 require "fileutils"
 require "yaml"
-require "pp"
 
 module Jekyll
   module Memegen
@@ -23,8 +22,6 @@ module Jekyll
       gallery.render(page.site.layouts, page.site.site_payload)
       gallery.write(page.site.dest)
       page.site.pages << gallery
-      PP.pp(gallery.inspect)
-      #galleries << gallery
     end
     
     class Meme
