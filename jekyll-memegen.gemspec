@@ -7,7 +7,11 @@ Gem::Specification.new do |s|
   s.authors     = ["Robbie Nichols"]
   s.email       = 'nichols.robbie@gmail.com'
   s.files       = ["lib/jekyll-memegen.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/jekyll-memegen'
-  s.license       = 'MIT'
+  s.homepage    = 'https://github.com/Soyokaze-42/jekyll-memegen'
+  s.license     = 'MIT'
+  
+  spec.add_dependency "jekyll", "~> 3.3"
+  spec.add_dependency "rmagick", "~> 2.1"
+  spec.add_dependency "fileutils"
+  spec.add_dependency "yaml"
 end
